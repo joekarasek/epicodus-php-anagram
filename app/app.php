@@ -13,3 +13,5 @@
 
 
 ?>
+
+// require_once - It opens the autoload.php file which Composer added into the vendor folder.
