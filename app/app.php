@@ -6,8 +6,10 @@
     require_once __DIR__."/../vendor/autoload.php";
     require_once __DIR__."/../src/jobOpening.php";
 
+// This creates a new instance of the class Silex\Application(), and stores it in a new variable called $app. This object represents our entire website as an entity. We instantiate it just like we instantiated our own classes of Car and Contact.
     $app = new Silex\Application();
 
+// This defines a route. It shows the PHP interpreter where to go and what code to execute when a particular address is typed into the browser.
     $app->get("/", function() {
         return "Home";
     });
