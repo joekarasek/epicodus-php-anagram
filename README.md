@@ -1,33 +1,32 @@
-# PHP Start up folders - DOWNLOAD ZIP, do not clone
+# Anagram Checker
+#### _Enter a master word and a test word to see if the master word contains an anagram of the test word, 2/16/2016_
 
-#### _Enter amount user is willing to spend, to see list of cars user can buy, 2/7/2016_
-
-#### By _** Ronando **_
+#### By _**Joseph Karasek and Alex Fallenstedt**_
 
 ## Description
 
-_Dealership app will accept user input for dollar amount willing to spend. App spits out car objects priced below what user input is._
+_Anagram checker. Enter a master word and a test word. Application will determine if the test word is contained within the master word._
+
+_The goal of this project was to practice BDD using PHP Unit._
 
 ## Setup/Installation Requirements
 
-* _run $ composer install in terminal in web folder once you have cloned the repository. But don't clone, download zip._
+* _run $ composer install in terminal in web folder once you have cloned the repository._
 * _Silex is a dependency of the project. _
+* _Twig is also a dependency of the project. _
 
 ## Known Bugs
 
-_{Currently does not error handle. Inputted text will break it.}_
+_No known bugs at this time._
 
 ## Support and contact details
 
-_{No support available.}_
+_Feel free to contact the authors of this project through their gitHub portfolios._
 
 ## Technologies Used
 
-* _HTML_
-* _CSS_
-* _PHP_
-* _Blood, sweat, tears_
+_This app was built with the Silex micro-framework, the Twig templating language, and PHP Unit for testing._
 
 ### License
 
-*No license.*
+*MIT License*
