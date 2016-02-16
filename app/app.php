@@ -2,11 +2,6 @@
     require_once __DIR__."/../vendor/autoload.php";
     require_once __DIR__."/../src/Anagram.php";
 
-    session_start();
-    if (empty($_SESSION['list_of_places'])) {
-        $_SESSION['list_of_places'] = array();
-    }
-
     $app = new Silex\Application();
 
     $app->register(new Silex\Provider\TwigServiceProvider(), array(
@@ -17,7 +12,17 @@
 
     // Render Home Page
     $app->get("/", function() use ($app) {
-        return $app['twig']->render('example.html.twig'); //
+        return $app['twig']->render('index.html.twig'); //
+    });
+
+    // Render Home Page
+    $app->get("/return_results", function() use ($app) {
+        $my_anagram = new Anagram;
+        $result = $my_anagram->softCompareWords($_GET['master'] , $_GET['test']);
+
+        return $app['twig']->render('index.html.twig', array(
+            'result' => $result
+        )); //
     });
 
     return $app;
