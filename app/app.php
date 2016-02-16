@@ -13,6 +13,12 @@
     'twig.path' => __DIR__.'/../views'
     ));
 
+// End busy code -----------^
+
+    // Render Home Page
+    $app->get("/", function() use ($app) {
+        return $app['twig']->render('example.html.twig'); //
+    });
 
     return $app;
 
